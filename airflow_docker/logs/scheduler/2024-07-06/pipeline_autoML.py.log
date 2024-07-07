@@ -1,0 +1,440 @@
+[2024-07-06T03:24:18.692+0000] {processor.py:161} INFO - Started process (PID=1523) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:24:18.692+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:24:18.694+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:24:18.694+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:24:19.556+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:24:19.556+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-x_p1hqgt because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:24:19.698+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:24:19.697+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:24:21.023+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:24:21.015+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:24:21.023+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:24:21.035+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 2.345 seconds
+[2024-07-06T03:24:51.872+0000] {processor.py:161} INFO - Started process (PID=1636) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:24:51.873+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:24:51.875+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:24:51.874+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:24:52.602+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:24:52.601+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-4vc4s0wc because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:24:52.699+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:24:52.699+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:24:53.448+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:24:53.444+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:24:53.448+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:24:53.459+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.589 seconds
+[2024-07-06T03:25:23.519+0000] {processor.py:161} INFO - Started process (PID=1749) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:25:23.520+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:25:23.521+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:25:23.521+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:25:24.263+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:25:24.263+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-9p812fuj because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:25:24.350+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:25:24.350+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:25:25.102+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:25:25.097+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:25:25.103+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:25:25.114+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.598 seconds
+[2024-07-06T03:25:55.269+0000] {processor.py:161} INFO - Started process (PID=1862) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:25:55.269+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:25:55.271+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:25:55.270+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:25:56.025+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:25:56.025+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-qhrsbq4r because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:25:56.111+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:25:56.111+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:25:56.956+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:25:56.952+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:25:56.956+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:25:56.969+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.702 seconds
+[2024-07-06T03:26:27.734+0000] {processor.py:161} INFO - Started process (PID=1982) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:26:27.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:26:27.736+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:26:27.736+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:26:28.484+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:26:28.484+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-a1uj1d6k because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:26:28.566+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:26:28.566+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:26:29.379+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:26:29.375+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:26:29.380+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:26:29.391+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.659 seconds
+[2024-07-06T03:26:59.475+0000] {processor.py:161} INFO - Started process (PID=2103) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:26:59.476+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:26:59.477+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:26:59.477+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:27:00.218+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:27:00.217+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-fovkxuby because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:27:00.301+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:27:00.300+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:27:01.101+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:27:01.097+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:27:01.101+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:27:01.114+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.641 seconds
+[2024-07-06T03:27:21.721+0000] {processor.py:161} INFO - Started process (PID=2201) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:27:21.722+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:27:21.723+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:27:21.723+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:27:22.658+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:27:22.658+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-78ijrnl8 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:27:22.747+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:27:22.747+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:27:23.596+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:27:23.592+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:27:23.596+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:27:23.608+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.888 seconds
+[2024-07-06T03:27:54.225+0000] {processor.py:161} INFO - Started process (PID=2314) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:27:54.226+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:27:54.227+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:27:54.227+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:27:54.986+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:27:54.986+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-93mmv0sc because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:27:55.069+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:27:55.069+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:27:55.997+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:27:55.991+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:27:55.998+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:27:56.017+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.794 seconds
+[2024-07-06T03:28:26.545+0000] {processor.py:161} INFO - Started process (PID=2427) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:28:26.546+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:28:26.547+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:28:26.547+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:28:27.337+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:28:27.337+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-xtpwg8sp because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:28:27.422+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:28:27.421+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:28:28.389+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:28:28.382+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:28:28.390+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:28:28.407+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.864 seconds
+[2024-07-06T03:28:58.490+0000] {processor.py:161} INFO - Started process (PID=2544) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:28:58.491+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:28:58.493+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:28:58.492+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:28:59.271+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:28:59.271+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-lvvh_i_5 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:28:59.357+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:28:59.357+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:29:00.158+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:29:00.154+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:29:00.159+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:29:00.170+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.682 seconds
+[2024-07-06T03:29:30.896+0000] {processor.py:161} INFO - Started process (PID=2662) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:29:30.897+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:29:30.898+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:29:30.898+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:29:31.718+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:29:31.717+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-gm4oxiyc because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:29:31.803+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:29:31.802+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:29:32.608+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:29:32.604+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:29:32.608+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:29:32.622+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.728 seconds
+[2024-07-06T03:29:44.710+0000] {processor.py:161} INFO - Started process (PID=2747) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:29:44.710+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:29:44.712+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:29:44.711+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:29:45.520+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:29:45.520+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-yy0gyezw because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:29:45.606+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:29:45.605+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:29:46.393+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:29:46.390+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:29:46.394+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:29:46.408+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.700 seconds
+[2024-07-06T03:30:16.452+0000] {processor.py:161} INFO - Started process (PID=2862) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:30:16.453+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:30:16.454+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:30:16.454+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:30:17.179+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:30:17.179+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-hrzb4yp7 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:30:17.261+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:30:17.261+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:30:18.004+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:30:18.000+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:30:18.004+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:30:18.015+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.565 seconds
+[2024-07-06T03:30:48.489+0000] {processor.py:161} INFO - Started process (PID=2975) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:30:48.490+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:30:48.492+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:30:48.491+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:30:49.205+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:30:49.205+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-0en9gpp9 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:30:49.289+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:30:49.289+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:30:50.094+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:30:50.090+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:30:50.095+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:30:50.108+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.621 seconds
+[2024-07-06T03:31:20.176+0000] {processor.py:161} INFO - Started process (PID=3088) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:31:20.177+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:31:20.178+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:31:20.178+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:31:20.872+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:31:20.872+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-dk0jj9lt because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:31:20.957+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:31:20.957+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:31:21.726+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:31:21.722+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:31:21.726+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:31:21.737+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.563 seconds
+[2024-07-06T03:31:52.225+0000] {processor.py:161} INFO - Started process (PID=3201) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:31:52.225+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:31:52.227+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:31:52.226+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:31:53.009+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:31:53.009+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-pag13uy8 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:31:53.092+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:31:53.092+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:31:53.838+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:31:53.834+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:31:53.839+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:31:53.851+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.628 seconds
+[2024-07-06T03:32:24.072+0000] {processor.py:161} INFO - Started process (PID=3331) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:32:24.073+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:32:24.074+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:32:24.074+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:32:24.811+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:32:24.811+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-qvisyfz_ because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:32:24.894+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:32:24.894+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:32:25.636+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:32:25.632+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:32:25.636+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:32:25.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.579 seconds
+[2024-07-06T03:32:56.032+0000] {processor.py:161} INFO - Started process (PID=3444) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:32:56.033+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:32:56.034+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:32:56.034+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:32:56.752+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:32:56.752+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-ct4abyvi because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:32:56.837+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:32:56.837+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:32:57.637+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:32:57.633+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:32:57.637+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:32:57.650+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.620 seconds
+[2024-07-06T03:33:28.373+0000] {processor.py:161} INFO - Started process (PID=3557) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:33:28.374+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:33:28.375+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:33:28.375+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:33:29.068+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:33:29.068+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-kezpx_64 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:33:29.151+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:33:29.151+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:33:29.880+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:33:29.876+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:33:29.880+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:33:29.891+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.520 seconds
+[2024-07-06T03:34:00.568+0000] {processor.py:161} INFO - Started process (PID=3670) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:34:00.569+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:34:00.570+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:34:00.570+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:34:01.294+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:34:01.293+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-12ub_iqz because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:34:01.385+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:34:01.385+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:34:02.153+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:34:02.149+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:34:02.153+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:34:02.165+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.598 seconds
+[2024-07-06T03:34:32.225+0000] {processor.py:161} INFO - Started process (PID=3787) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:34:32.226+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:34:32.228+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:34:32.227+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:34:32.948+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:34:32.948+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-i_rl69_i because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:34:33.032+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:34:33.031+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:34:33.787+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:34:33.783+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:34:33.788+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:34:33.799+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.576 seconds
+[2024-07-06T03:35:04.576+0000] {processor.py:161} INFO - Started process (PID=3905) to work on /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:35:04.577+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline_autoML.py for tasks to queue
+[2024-07-06T03:35:04.578+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:35:04.578+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:35:05.291+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:35:05.291+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-onvxqyt7 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-07-06T03:35:05.373+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:35:05.373+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-07-06T03:35:06.144+0000] {logging_mixin.py:188} INFO - [2024-07-06T03:35:06.140+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pipeline_autoML.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_autoML.py", line 9, in <module>
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/__init__.py", line 7, in <module>
+    api.authenticate()
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 398, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in /home/airflow/.kaggle. Or use the environment method.
+[2024-07-06T03:35:06.144+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_autoML.py
+[2024-07-06T03:35:06.154+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline_autoML.py took 1.580 seconds

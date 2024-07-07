@@ -1,0 +1,73 @@
+[2024-07-07T06:52:49.785+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=manual__2024-07-07T05:54:07.639321+00:00/task_id=SubmitKaggle permission to 509
+[2024-07-07T06:52:49.787+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=manual__2024-07-07T05:54:07.639321+00:00 permission to 509
+[2024-07-07T06:52:49.788+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo permission to 509
+[2024-07-07T06:52:49.788+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs permission to 509
+[2024-07-07T06:52:49.811+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=manual__2024-07-07T05:54:07.639321+00:00/task_id=SubmitKaggle permission to 509
+[2024-07-07T06:52:49.812+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=manual__2024-07-07T05:54:07.639321+00:00 permission to 509
+[2024-07-07T06:52:49.813+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo permission to 509
+[2024-07-07T06:52:49.813+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs permission to 509
+[2024-07-07T06:52:49.844+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: AutoML_workflow_demo.SubmitKaggle manual__2024-07-07T05:54:07.639321+00:00 [queued]>
+[2024-07-07T06:52:49.855+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: AutoML_workflow_demo.SubmitKaggle manual__2024-07-07T05:54:07.639321+00:00 [queued]>
+[2024-07-07T06:52:49.855+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-07-07T06:52:49.871+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): SubmitKaggle> on 2024-07-07 05:54:07.639321+00:00
+[2024-07-07T06:52:49.883+0000] {standard_task_runner.py:60} INFO - Started process 4884 to run task
+[2024-07-07T06:52:49.887+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'AutoML_workflow_demo', 'SubmitKaggle', 'manual__2024-07-07T05:54:07.639321+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/dmc_pipeline.py', '--cfg-path', '/tmp/tmptqpgg769']
+[2024-07-07T06:52:49.888+0000] {standard_task_runner.py:88} INFO - Job 40: Subtask SubmitKaggle
+[2024-07-07T06:52:49.923+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=manual__2024-07-07T05:54:07.639321+00:00/task_id=SubmitKaggle permission to 509
+[2024-07-07T06:52:49.924+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=manual__2024-07-07T05:54:07.639321+00:00 permission to 509
+[2024-07-07T06:52:49.925+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo permission to 509
+[2024-07-07T06:52:49.927+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs permission to 509
+[2024-07-07T06:52:49.928+0000] {task_command.py:423} INFO - Running <TaskInstance: AutoML_workflow_demo.SubmitKaggle manual__2024-07-07T05:54:07.639321+00:00 [running]> on host c848c3042a1e
+[2024-07-07T06:52:49.978+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='AutoML_workflow_demo' AIRFLOW_CTX_TASK_ID='SubmitKaggle' AIRFLOW_CTX_EXECUTION_DATE='2024-07-07T05:54:07.639321+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-07T05:54:07.639321+00:00'
+[2024-07-07T06:52:49.985+0000] {logging_mixin.py:188} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/***/.kaggle/kaggle.json'
+[2024-07-07T06:52:50.658+0000] {logging_mixin.py:188} WARNING -   0%|          | 0.00/759k [00:00<?, ?B/s]
+[2024-07-07T06:52:50.777+0000] {logging_mixin.py:188} WARNING -   2%|2         | 16.0k/759k [00:00<00:05, 138kB/s]
+[2024-07-07T06:52:52.069+0000] {logging_mixin.py:188} WARNING - 100%|##########| 759k/759k [00:01<00:00, 551kB/s] 
+[2024-07-07T06:52:52.398+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dmc_pipeline.py", line 113, in SubmitKaggle
+    api.competition_submit(file_name=ti.xcom_pull(task_ids='AutoML_PyCaret'),
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py", line 786, in competition_submit
+    self.competitions_submissions_submit_with_http_info(
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api/kaggle_api.py", line 800, in competitions_submissions_submit_with_http_info
+    return self.api_client.call_api(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api_client.py", line 313, in call_api
+    return self.__call_api(resource_path, method,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api_client.py", line 145, in __call_api
+    response_data = self.request(
+                    ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/api_client.py", line 355, in request
+    return self.rest_client.POST(url,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/rest.py", line 266, in POST
+    return self.request("POST", url,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/kaggle/rest.py", line 225, in request
+    raise ApiException(http_resp=r)
+kaggle.rest.ApiException: (403)
+Reason: Forbidden
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json', 'Date': 'Sun, 07 Jul 2024 06:52:49 GMT', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Origin': '*', 'Set-Cookie': 'ka_sessionid=37e96f8d27c4e9376e3cc3778efa70fb; max-age=2626560; path=/, GCLB=CJiZ9q22kp237QEQAw; path=/; HttpOnly', 'Vary': 'Accept-Encoding', 'X-Kaggle-MillisecondsElapsed': '122', 'X-Kaggle-RequestId': 'b97da9d0e45d267d697767bcf8ea8841', 'X-Kaggle-ApiVersion': '1.6.14', 'X-Kaggle-HubVersion': '0.2.7', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload', 'Content-Security-Policy': "object-src 'none'; script-src 'nonce-uwPT0Pm9tG9lFvk/0e5JpQ==' 'report-sample' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:; base-uri 'none'; report-uri https://csp.withgoogle.com/csp/kaggle/20201130; frame-src 'self' https://www.kaggleusercontent.com https://www.youtube.com/embed/ https://polygraph-cool.github.io https://www.google.com/recaptcha/ https://www.docdroid.com https://www.docdroid.net https://kaggle-static.storage.googleapis.com https://kkb-production.jupyter-proxy.kaggle.net https://kkb-production.firebaseapp.com https://kaggle-metastore.firebaseapp.com https://apis.google.com https://content-sheets.googleapis.com/ https://accounts.google.com/ https://storage.googleapis.com https://docs.google.com https://drive.google.com https://calendar.google.com/ ;", 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'Transfer-Encoding': 'chunked'})
+HTTP response body: {"code":403,"message":"You must accept the rules for this competition to perform this action."}
+
+[2024-07-07T06:52:52.415+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=AutoML_workflow_demo, task_id=SubmitKaggle, execution_date=20240707T055407, start_date=20240707T065249, end_date=20240707T065252
+[2024-07-07T06:52:52.427+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 40 for task SubmitKaggle ((403)
+Reason: Forbidden
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json', 'Date': 'Sun, 07 Jul 2024 06:52:49 GMT', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Origin': '*', 'Set-Cookie': 'ka_sessionid=37e96f8d27c4e9376e3cc3778efa70fb; max-age=2626560; path=/, GCLB=CJiZ9q22kp237QEQAw; path=/; HttpOnly', 'Vary': 'Accept-Encoding', 'X-Kaggle-MillisecondsElapsed': '122', 'X-Kaggle-RequestId': 'b97da9d0e45d267d697767bcf8ea8841', 'X-Kaggle-ApiVersion': '1.6.14', 'X-Kaggle-HubVersion': '0.2.7', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload', 'Content-Security-Policy': "object-src 'none'; script-src 'nonce-uwPT0Pm9tG9lFvk/0e5JpQ==' 'report-sample' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:; base-uri 'none'; report-uri https://csp.withgoogle.com/csp/kaggle/20201130; frame-src 'self' https://www.kaggleusercontent.com https://www.youtube.com/embed/ https://polygraph-cool.github.io https://www.google.com/recaptcha/ https://www.docdroid.com https://www.docdroid.net https://kaggle-static.storage.googleapis.com https://kkb-production.jupyter-proxy.kaggle.net https://kkb-production.firebaseapp.com https://kaggle-metastore.firebaseapp.com https://apis.google.com https://content-sheets.googleapis.com/ https://accounts.google.com/ https://storage.googleapis.com https://docs.google.com https://drive.google.com https://calendar.google.com/ ;", 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'Transfer-Encoding': 'chunked'})
+HTTP response body: {"code":403,"message":"You must accept the rules for this competition to perform this action."}
+; 4884)
+[2024-07-07T06:52:52.467+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-07-07T06:52:52.479+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

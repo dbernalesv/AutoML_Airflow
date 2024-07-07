@@ -1,0 +1,54 @@
+[2024-07-07T18:38:17.409+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=scheduled__2024-07-06T17:00:00+00:00/task_id=GetDataKaggle permission to 509
+[2024-07-07T18:38:17.410+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=scheduled__2024-07-06T17:00:00+00:00 permission to 509
+[2024-07-07T18:38:17.411+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo permission to 509
+[2024-07-07T18:38:17.412+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs permission to 509
+[2024-07-07T18:38:17.442+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=scheduled__2024-07-06T17:00:00+00:00/task_id=GetDataKaggle permission to 509
+[2024-07-07T18:38:17.443+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=scheduled__2024-07-06T17:00:00+00:00 permission to 509
+[2024-07-07T18:38:17.444+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo permission to 509
+[2024-07-07T18:38:17.445+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs permission to 509
+[2024-07-07T18:38:17.470+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: AutoML_workflow_demo.GetDataKaggle scheduled__2024-07-06T17:00:00+00:00 [queued]>
+[2024-07-07T18:38:17.477+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: AutoML_workflow_demo.GetDataKaggle scheduled__2024-07-06T17:00:00+00:00 [queued]>
+[2024-07-07T18:38:17.478+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-07-07T18:38:17.489+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): GetDataKaggle> on 2024-07-06 17:00:00+00:00
+[2024-07-07T18:38:17.500+0000] {standard_task_runner.py:60} INFO - Started process 162 to run task
+[2024-07-07T18:38:17.505+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'AutoML_workflow_demo', 'GetDataKaggle', 'scheduled__2024-07-06T17:00:00+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/dmc_pipeline.py', '--cfg-path', '/tmp/tmp4y8uo2us']
+[2024-07-07T18:38:17.506+0000] {standard_task_runner.py:88} INFO - Job 44: Subtask GetDataKaggle
+[2024-07-07T18:38:17.715+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=scheduled__2024-07-06T17:00:00+00:00/task_id=GetDataKaggle permission to 509
+[2024-07-07T18:38:17.716+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=scheduled__2024-07-06T17:00:00+00:00 permission to 509
+[2024-07-07T18:38:17.717+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo permission to 509
+[2024-07-07T18:38:17.718+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs permission to 509
+[2024-07-07T18:38:17.720+0000] {task_command.py:423} INFO - Running <TaskInstance: AutoML_workflow_demo.GetDataKaggle scheduled__2024-07-06T17:00:00+00:00 [running]> on host 491d1386731f
+[2024-07-07T18:38:17.833+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='AutoML_workflow_demo' AIRFLOW_CTX_TASK_ID='GetDataKaggle' AIRFLOW_CTX_EXECUTION_DATE='2024-07-06T17:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-06T17:00:00+00:00'
+[2024-07-07T18:38:17.843+0000] {logging_mixin.py:188} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/***/.kaggle/kaggle.json'
+[2024-07-07T18:38:19.399+0000] {logging_mixin.py:188} INFO - Unzipped playground-series-s4e6.zip
+[2024-07-07T18:38:19.404+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-07-07T18:38:19.464+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=AutoML_workflow_demo, task_id=GetDataKaggle, execution_date=20240706T170000, start_date=20240707T183817, end_date=20240707T183819
+[2024-07-07T18:38:19.524+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-07-07T18:38:19.561+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-07T19:09:57.112+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=scheduled__2024-07-06T17:00:00+00:00/task_id=GetDataKaggle permission to 509
+[2024-07-07T19:09:57.113+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=scheduled__2024-07-06T17:00:00+00:00 permission to 509
+[2024-07-07T19:09:57.114+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo permission to 509
+[2024-07-07T19:09:57.115+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs permission to 509
+[2024-07-07T19:09:57.136+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=scheduled__2024-07-06T17:00:00+00:00/task_id=GetDataKaggle permission to 509
+[2024-07-07T19:09:57.137+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=scheduled__2024-07-06T17:00:00+00:00 permission to 509
+[2024-07-07T19:09:57.138+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo permission to 509
+[2024-07-07T19:09:57.139+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs permission to 509
+[2024-07-07T19:09:57.162+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: AutoML_workflow_demo.GetDataKaggle scheduled__2024-07-06T17:00:00+00:00 [queued]>
+[2024-07-07T19:09:57.167+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: AutoML_workflow_demo.GetDataKaggle scheduled__2024-07-06T17:00:00+00:00 [queued]>
+[2024-07-07T19:09:57.167+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-07-07T19:09:57.176+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): GetDataKaggle> on 2024-07-06 17:00:00+00:00
+[2024-07-07T19:09:57.183+0000] {standard_task_runner.py:60} INFO - Started process 2386 to run task
+[2024-07-07T19:09:57.186+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'AutoML_workflow_demo', 'GetDataKaggle', 'scheduled__2024-07-06T17:00:00+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/dmc_pipeline.py', '--cfg-path', '/tmp/tmpsjk2gcf2']
+[2024-07-07T19:09:57.187+0000] {standard_task_runner.py:88} INFO - Job 46: Subtask GetDataKaggle
+[2024-07-07T19:09:57.226+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=scheduled__2024-07-06T17:00:00+00:00/task_id=GetDataKaggle permission to 509
+[2024-07-07T19:09:57.227+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=scheduled__2024-07-06T17:00:00+00:00 permission to 509
+[2024-07-07T19:09:57.228+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo permission to 509
+[2024-07-07T19:09:57.228+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs permission to 509
+[2024-07-07T19:09:57.230+0000] {task_command.py:423} INFO - Running <TaskInstance: AutoML_workflow_demo.GetDataKaggle scheduled__2024-07-06T17:00:00+00:00 [running]> on host 491d1386731f
+[2024-07-07T19:09:57.285+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='AutoML_workflow_demo' AIRFLOW_CTX_TASK_ID='GetDataKaggle' AIRFLOW_CTX_EXECUTION_DATE='2024-07-06T17:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-06T17:00:00+00:00'
+[2024-07-07T19:09:57.292+0000] {logging_mixin.py:188} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/***/.kaggle/kaggle.json'
+[2024-07-07T19:09:58.810+0000] {logging_mixin.py:188} INFO - Unzipped playground-series-s4e6.zip
+[2024-07-07T19:09:58.814+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-07-07T19:09:58.821+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=AutoML_workflow_demo, task_id=GetDataKaggle, execution_date=20240706T170000, start_date=20240707T190957, end_date=20240707T190958
+[2024-07-07T19:09:58.844+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-07-07T19:09:58.863+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

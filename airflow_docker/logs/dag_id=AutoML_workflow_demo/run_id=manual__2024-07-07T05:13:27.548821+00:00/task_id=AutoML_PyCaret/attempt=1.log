@@ -1,0 +1,212 @@
+[2024-07-07T05:14:08.290+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=manual__2024-07-07T05:13:27.548821+00:00/task_id=AutoML_PyCaret permission to 509
+[2024-07-07T05:14:08.292+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=manual__2024-07-07T05:13:27.548821+00:00 permission to 509
+[2024-07-07T05:14:08.293+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo permission to 509
+[2024-07-07T05:14:08.294+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs permission to 509
+[2024-07-07T05:14:08.333+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=manual__2024-07-07T05:13:27.548821+00:00/task_id=AutoML_PyCaret permission to 509
+[2024-07-07T05:14:08.334+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=manual__2024-07-07T05:13:27.548821+00:00 permission to 509
+[2024-07-07T05:14:08.335+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo permission to 509
+[2024-07-07T05:14:08.336+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs permission to 509
+[2024-07-07T05:14:08.394+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: AutoML_workflow_demo.AutoML_PyCaret manual__2024-07-07T05:13:27.548821+00:00 [queued]>
+[2024-07-07T05:14:08.414+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: AutoML_workflow_demo.AutoML_PyCaret manual__2024-07-07T05:13:27.548821+00:00 [queued]>
+[2024-07-07T05:14:08.420+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-07-07T05:14:08.454+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): AutoML_PyCaret> on 2024-07-07 05:13:27.548821+00:00
+[2024-07-07T05:14:08.485+0000] {standard_task_runner.py:60} INFO - Started process 2191 to run task
+[2024-07-07T05:14:08.509+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'AutoML_workflow_demo', 'AutoML_PyCaret', 'manual__2024-07-07T05:13:27.548821+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/dmc_pipeline.py', '--cfg-path', '/tmp/tmpeq7s_2kd']
+[2024-07-07T05:14:08.530+0000] {standard_task_runner.py:88} INFO - Job 30: Subtask AutoML_PyCaret
+[2024-07-07T05:14:08.583+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=manual__2024-07-07T05:13:27.548821+00:00/task_id=AutoML_PyCaret permission to 509
+[2024-07-07T05:14:08.585+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo/run_id=manual__2024-07-07T05:13:27.548821+00:00 permission to 509
+[2024-07-07T05:14:08.586+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs/dag_id=AutoML_workflow_demo permission to 509
+[2024-07-07T05:14:08.587+0000] {logging_mixin.py:188} INFO - Changing /opt/***/logs permission to 509
+[2024-07-07T05:14:08.589+0000] {task_command.py:423} INFO - Running <TaskInstance: AutoML_workflow_demo.AutoML_PyCaret manual__2024-07-07T05:13:27.548821+00:00 [running]> on host 549d24f0d639
+[2024-07-07T05:14:08.701+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='AutoML_workflow_demo' AIRFLOW_CTX_TASK_ID='AutoML_PyCaret' AIRFLOW_CTX_EXECUTION_DATE='2024-07-07T05:13:27.548821+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-07T05:13:27.548821+00:00'
+[2024-07-07T05:14:16.910+0000] {logging_mixin.py:188} INFO -                     Description                                 Value
+0                    Session id                                   123
+1                        Target                                Target
+2                   Target type                            Multiclass
+3                Target mapping  Dropout: 0, Enrolled: 1, Graduate: 2
+4           Original data shape                           (76518, 37)
+5        Transformed data shape                           (76518, 37)
+6   Transformed train set shape                           (53562, 37)
+7    Transformed test set shape                           (22956, 37)
+8              Numeric features                                    36
+9                    Preprocess                                  True
+10              Imputation type                                simple
+11           Numeric imputation                                  mean
+12       Categorical imputation                                  mode
+13               Fold Generator                       StratifiedKFold
+14                  Fold Number                                    10
+15                     CPU Jobs                                    -1
+16                      Use GPU                                 False
+17               Log Experiment                                 False
+18              Experiment Name                      clf-default-name
+19                          USI                                  3ce1
+[2024-07-07T05:14:17.867+0000] {logging_mixin.py:188} WARNING - Processing:   0%|          | 0/61 [00:00<?, ?it/s]
+[2024-07-07T05:14:18.033+0000] {logging_mixin.py:188} WARNING - Processing:   5%|4         | 3/61 [00:00<00:03, 18.15it/s]
+[2024-07-07T05:14:37.867+0000] {logging_mixin.py:188} WARNING - Processing:   7%|6         | 4/61 [00:19<00:03, 18.15it/s]
+[2024-07-07T05:19:52.522+0000] {logging_mixin.py:188} WARNING - Processing:   8%|8         | 5/61 [05:34<1:16:10, 81.61s/it]
+[2024-07-07T05:19:52.949+0000] {logging_mixin.py:188} WARNING - Processing:  11%|#1        | 7/61 [05:35<43:21, 48.18s/it]  
+[2024-07-07T05:20:06.081+0000] {logging_mixin.py:188} WARNING - Processing:  15%|#4        | 9/61 [05:48<28:25, 32.79s/it]
+[2024-07-07T05:20:06.398+0000] {logging_mixin.py:188} WARNING - Processing:  18%|#8        | 11/61 [05:48<17:55, 21.51s/it]
+[2024-07-07T05:20:08.604+0000] {logging_mixin.py:188} WARNING - Processing:  21%|##1       | 13/61 [05:50<11:48, 14.77s/it]
+[2024-07-07T05:20:08.943+0000] {logging_mixin.py:188} WARNING - Processing:  25%|##4       | 15/61 [05:51<07:43, 10.08s/it]
+[2024-07-07T05:20:17.214+0000] {logging_mixin.py:188} WARNING - Processing:  28%|##7       | 17/61 [05:59<06:01,  8.22s/it]
+[2024-07-07T05:20:17.637+0000] {logging_mixin.py:188} WARNING - Processing:  31%|###1      | 19/61 [05:59<04:00,  5.74s/it]
+[2024-07-07T05:21:17.032+0000] {logging_mixin.py:188} WARNING - Processing:  34%|###4      | 21/61 [06:59<08:43, 13.09s/it]
+[2024-07-07T05:21:17.543+0000] {logging_mixin.py:188} WARNING - Processing:  38%|###7      | 23/61 [06:59<05:48,  9.18s/it]
+[2024-07-07T05:21:21.020+0000] {logging_mixin.py:188} WARNING - Processing:  41%|####      | 25/61 [07:03<04:09,  6.92s/it]
+[2024-07-07T05:21:21.486+0000] {logging_mixin.py:188} WARNING - Processing:  44%|####4     | 27/61 [07:03<02:46,  4.90s/it]
+[2024-07-07T05:21:44.928+0000] {logging_mixin.py:188} WARNING - Processing:  48%|####7     | 29/61 [07:27<03:42,  6.96s/it]
+[2024-07-07T05:21:45.229+0000] {logging_mixin.py:188} WARNING - Processing:  51%|#####     | 31/61 [07:27<02:27,  4.91s/it]
+[2024-07-07T05:21:48.669+0000] {logging_mixin.py:188} WARNING - Processing:  54%|#####4    | 33/61 [07:30<01:50,  3.95s/it]
+[2024-07-07T05:21:49.003+0000] {logging_mixin.py:188} WARNING - Processing:  57%|#####7    | 35/61 [07:31<01:13,  2.81s/it]
+[2024-07-07T05:22:10.544+0000] {logging_mixin.py:188} WARNING - Processing:  61%|######    | 37/61 [07:52<02:04,  5.20s/it]
+[2024-07-07T05:22:10.849+0000] {logging_mixin.py:188} WARNING - Processing:  64%|######3   | 39/61 [07:52<01:21,  3.69s/it]
+[2024-07-07T05:26:17.004+0000] {logging_mixin.py:188} WARNING - Processing:  67%|######7   | 41/61 [11:59<13:10, 39.53s/it]
+[2024-07-07T05:26:17.440+0000] {logging_mixin.py:188} WARNING - Processing:  70%|#######   | 43/61 [11:59<08:19, 27.73s/it]
+[2024-07-07T05:26:25.811+0000] {logging_mixin.py:188} WARNING - Processing:  74%|#######3  | 45/61 [12:07<05:30, 20.66s/it]
+[2024-07-07T05:26:26.291+0000] {logging_mixin.py:188} WARNING - Processing:  77%|#######7  | 47/61 [12:08<03:23, 14.54s/it]
+[2024-07-07T05:26:41.419+0000] {job.py:213} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/jobs/job.py", line 187, in heartbeat
+    self._merge_from(Job._fetch_from_db(self, session))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/api_internal/internal_api_call.py", line 114, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/jobs/job.py", line 308, in _fetch_from_db
+    session.merge(job)
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-07-07T05:26:41.441+0000] {job.py:221} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2024-07-07T05:27:02.267+0000] {logging_mixin.py:188} WARNING - Processing:  80%|########  | 49/61 [12:44<03:06, 15.57s/it]
+[2024-07-07T05:27:02.560+0000] {logging_mixin.py:188} WARNING - Processing:  84%|########3 | 51/61 [12:44<01:49, 10.94s/it]
+[2024-07-07T05:32:29.383+0000] {job.py:221} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2024-07-07T05:32:41.367+0000] {local_task_job_runner.py:234} INFO - Task exited with return code -9
+[2024-07-07T05:32:41.435+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
